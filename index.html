@@ -1,29 +1,50 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <title>Ammar Muhammad | IT Professional & Data Analyst</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /* CSS Hack untuk menyembunyikan Banner Google */
-        body, html { 
-            margin: 0; 
-            padding: 0; 
-            height: 100%; 
-            overflow: hidden; 
-            background-color: #0a0a0a; 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ammar Muhammad | IT Professional & Data Analyst</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html, body {
+        height: 100%;
+        width: 100%;
+        background-color: #0a0a0a;
+    }
+
+    .wrapper {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    iframe {
+        flex: 1;
+        width: 100%;
+        border: none;
+    }
+
+    @media (max-width: 768px) {
+        iframe {
+            height: 100vh;
         }
-        iframe { 
-            position: absolute;
-            top: -36px; /* Dorong banner ke atas agar hilang */
-            left: 0;
-            width: 100%; 
-            height: calc(100% + 36px); /* Berikan tinggi ekstra agar bawah tidak kosong */
-            border: none; 
-        }
-    </style>
+    }
+</style>
 </head>
+
 <body>
-    <iframe src="https://script.google.com/macros/s/AKfycbwtjvXWgiYCDdKUGxLtd0lM7hxgasdmnENqs5kopdPcXisxiwastNL6jGuEaj_i0neT/exec"></iframe>
+<div class="wrapper">
+    <iframe 
+        src="https://script.google.com/macros/s/AKfycbwtjvXWgiYCDdKUGxLtd0lM7hxgasdmnENqs5kopdPcXisxiwastNL6jGuEaj_i0neT/exec"
+        allowfullscreen>
+    </iframe>
+</div>
 </body>
 </html>
